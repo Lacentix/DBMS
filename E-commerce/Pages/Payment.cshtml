@@ -1,0 +1,50 @@
+@page
+@model PaymentModel
+
+@{
+    ViewData["Title"] = "Payment";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-body p-4">
+                    <h1 class="card-title">@ViewData["Title"]</h1>
+                    
+                    <p class="mb-3">Enter payment details:</p>
+
+                    <form id="paymentForm" method="post" asp-page-handler="ProcessPayment">
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Card Number</label>
+                            <input type="text" name="CardNumber" class="form-control" id="cardNumber" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="cardName" class="form-label">Cardholder Name</label>
+                            <input type="text" name="CardName" class="form-control" id="cardName" required />
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="expiry" class="form-label">Expiry Date</label>
+                                <input type="text" name="Expiry" class="form-control" id="expiry" placeholder="MM/YY" required />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cvv" class="form-label">CVV</label>
+                                <input type="text" name="CVV" class="form-control" id="cvv" required />
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Billing Address</label>
+                            <textarea name="Address" class="form-control" id="address" rows="3" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit Payment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+@page
+@model CartModel
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">@ViewData["Title"]</h1>
+
+                    <!-- Display cart items -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.CartItems)
+                            {
+                                <tr>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.Price</td>
+                                    <td>@(item.Quantity * item.Price)</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    <!-- Display total price -->
+                    <div class="text-end">
+                        <strong>Total: @Model.TotalPrice</strong>
+                    </div>
+
+                    <!-- Checkout button -->
+                    <form method="post" asp-page-handler="Checkout">
+                        <button type="submit" class="btn btn-primary">Checkout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
