@@ -6,6 +6,5 @@ public class contact : PageModel
 {
     public void OnGet()
     {
-        
     }
 }
