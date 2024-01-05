@@ -1,0 +1,131 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>E_commerce</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\js\site.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\LICENSE" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\LICENSE.md" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\accordions.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\bootstrap.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\custom.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\datepicker.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\imgfix.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\isotope.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\jquery-2.1.0.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\jquery.counterup.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\lightbox.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\owl-carousel.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\popper.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\quantity.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\scrollreveal.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\slick.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\waypoints.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\flex-slider.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\font-awesome.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\lightbox.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\owl-carousel.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\templatemo-hexashop.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\about-left-image.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\about-us-page-heading.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\baner-right-image-01.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\baner-right-image-02.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\baner-right-image-03.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\baner-right-image-04.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\close.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\explore-image-01.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\explore-image-02.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\instagram-01.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\instagram-02.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\instagram-03.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\instagram-04.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\instagram-05.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\instagram-06.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\kid-01.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\kid-02.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\kid-03.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\left-banner-image.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\loading.gif" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\logo.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\men-01.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\men-02.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\men-03.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\next.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\prev.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\products-page-heading.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\service-01.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\service-02.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\service-03.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\single-product-01.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\single-product-02.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\team-member-01.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\team-member-02.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\team-member-03.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\white-logo.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\women-01.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\women-02.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\women-03.jpg" />
+    </ItemGroup>
+
+</Project>
