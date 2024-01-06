@@ -35,7 +35,7 @@ namespace E_commerce.Pages
             // Clear the cart after checkout (you should implement this logic)
             // ClearCart();
 
-            return RedirectToPage("/Payment");
+            return RedirectToPage("/COD");
         }
 
         private decimal CalculateTotalPrice()

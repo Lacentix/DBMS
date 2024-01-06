@@ -8,6 +8,15 @@ namespace E_commerce.Pages
         public void OnGet()
         {
         }
-        
+        public IActionResult OnPost(string submitType) {
+            if (submitType == "submit")
+            {
+                return RedirectToPage("/Thanks");
+            }
+            else
+            {
+                return Page();
+            }
+        }
     }
 }
